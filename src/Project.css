@@ -1,0 +1,93 @@
+.projects {
+  min-height: 100vh;
+  background: linear-gradient(to right, #020617, #0f172a);
+  color: white;
+  padding: 80px 40px;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.projects-container h2 {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.projects-container h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.projects-container p {
+  color: #cbd5e1;
+  font-size: 25px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #111c44;
+  padding: 35px 25px;
+  border-radius: 20px;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: #8b5cf6;
+}
+
+.project-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.project-card h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 22px;
+  color: #e2e8f0;
+  margin-bottom: 20px;
+}
+
+.project-card h4 {
+  color: #38bdf8;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-buttons button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-buttons button:hover {
+  background: white;
+  color: #111827;
+}
