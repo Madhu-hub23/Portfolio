@@ -1,71 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body{
-    font-family:poppins;
-    background:#0F172A;
+  background-color: #06122e;
 }
 
+/* NAVBAR */
 
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 60px;
-    background:#111827;
-    font-family: 'Poppins', sans-serif;
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: #06122e;
+  flex-wrap: wrap;
 }
 
-nav h1{
-    color:white;
-    font-size:35px;
+.logo{
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
 }
 
-ul{
-    display:flex;
-    align-items:center;
-    gap:30px;
-    list-style:none;
-    font-size:35px;
+/* NAV LINKS */
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-ul li{
-    color:white;
-    cursor:pointer;
-    transition:0.3s;
+.nav-links li{
+  list-style: none;
 }
 
-ul li:hover{
-    color:#38BDF8;
-}
-
-nav button{
-    padding:15px 25px;
-    border:none;
-    border-radius:10px;
-    background:#387ef8;
-    color:white;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-nav button:hover{
-    background:#387ef8; 
-    transform: scale(1.05);
-}
 .nav-links a{
-    color: white;
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
 
 .nav-links a:hover{
-    color: cyan;
+  color: #38bdf8;
 }
-.nav-links a:hover{
-   color:#38bdf8;
-   transition:0.3s;
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px){
+
+  .navbar{
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .logo{
+    font-size: 40px;
+  }
+
+  .nav-links{
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .nav-links a{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo{
+    font-size: 34px;
+  }
+
+  .nav-links{
+    justify-content: center;
+    gap: 18px;
+    margin-top: 15px;
+  }
+
+  .nav-links a{
+    font-size: 20px;
+  }
 }
